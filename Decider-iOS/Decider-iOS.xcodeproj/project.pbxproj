@@ -23,6 +23,49 @@
 		5FDA6AFB170A7F370096E47B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA6AD3170A7F360096E47B /* Foundation.framework */; };
 		5FDA6B03170A7F370096E47B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FDA6B01170A7F370096E47B /* InfoPlist.strings */; };
 		5FDA6B06170A7F370096E47B /* Decider_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDA6B05170A7F370096E47B /* Decider_iOSTests.m */; };
+		5FE746661714902B00FF41D3 /* DCAbstractOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746651714902B00FF41D3 /* DCAbstractOverlay.m */; };
+		5FE746691714904200FF41D3 /* DCErrorOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746681714904200FF41D3 /* DCErrorOverlay.m */; };
+		5FE7466C1714904E00FF41D3 /* DCInfoOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7466B1714904E00FF41D3 /* DCInfoOverlay.m */; };
+		5FE7466F1714906800FF41D3 /* DCAbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7466E1714906800FF41D3 /* DCAbstractModel.m */; };
+		5FE746721714907800FF41D3 /* DCUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746711714907800FF41D3 /* DCUserModel.m */; };
+		5FE746751714908A00FF41D3 /* DCPartialEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746741714908A00FF41D3 /* DCPartialEventModel.m */; };
+		5FE746781714909900FF41D3 /* DCPartialTodoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746771714909900FF41D3 /* DCPartialTodoModel.m */; };
+		5FE7467B171490A700FF41D3 /* DCPartialLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7467A171490A700FF41D3 /* DCPartialLocationModel.m */; };
+		5FE7467E171490B500FF41D3 /* DCEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7467D171490B500FF41D3 /* DCEventModel.m */; };
+		5FE74681171490C600FF41D3 /* DCTodoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE74680171490C600FF41D3 /* DCTodoModel.m */; };
+		5FE74684171490D700FF41D3 /* DCLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE74683171490D700FF41D3 /* DCLocationModel.m */; };
+		5FE74687171490E700FF41D3 /* DCAbstractRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE74686171490E700FF41D3 /* DCAbstractRequest.m */; };
+		5FE7468A171490FE00FF41D3 /* DCAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE74689171490FE00FF41D3 /* DCAuthenticationRequest.m */; };
+		5FE7468D1714910D00FF41D3 /* DCRegistrationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7468C1714910D00FF41D3 /* DCRegistrationRequest.m */; };
+		5FE746901714911900FF41D3 /* DCLocationsForUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7468F1714911900FF41D3 /* DCLocationsForUserRequest.m */; };
+		5FE746931714914800FF41D3 /* DCParticipantsForEventRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746921714914800FF41D3 /* DCParticipantsForEventRequest.m */; };
+		5FE746961714915900FF41D3 /* DCEventsForUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746951714915900FF41D3 /* DCEventsForUserRequest.m */; };
+		5FE746991714916A00FF41D3 /* DCTodosForEventRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746981714916A00FF41D3 /* DCTodosForEventRequest.m */; };
+		5FE7469C171491B400FF41D3 /* DCGetEventRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7469B171491B400FF41D3 /* DCGetEventRequest.m */; };
+		5FE7469F171491C400FF41D3 /* DCGetTodoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7469E171491C400FF41D3 /* DCGetTodoRequest.m */; };
+		5FE746A2171491D900FF41D3 /* DCGetLocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746A1171491D900FF41D3 /* DCGetLocationRequest.m */; };
+		5FE746A5171491EA00FF41D3 /* DCGetUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746A4171491EA00FF41D3 /* DCGetUserRequest.m */; };
+		5FE746A8171491FD00FF41D3 /* DCCreateEventRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746A7171491FD00FF41D3 /* DCCreateEventRequest.m */; };
+		5FE746AB1714920D00FF41D3 /* DCCreateTodoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746AA1714920D00FF41D3 /* DCCreateTodoRequest.m */; };
+		5FE746AE1714921C00FF41D3 /* DCCreateLocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746AD1714921C00FF41D3 /* DCCreateLocationRequest.m */; };
+		5FE746B11714922D00FF41D3 /* DCAddParticipantsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746B01714922D00FF41D3 /* DCAddParticipantsRequest.m */; };
+		5FE746B41714924200FF41D3 /* DCRemoveParticipantsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746B31714924200FF41D3 /* DCRemoveParticipantsRequest.m */; };
+		5FE746B71714925300FF41D3 /* DCAddPointsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746B61714925300FF41D3 /* DCAddPointsRequest.m */; };
+		5FE746BA1714926400FF41D3 /* DCRemovePointsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746B91714926400FF41D3 /* DCRemovePointsRequest.m */; };
+		5FE746BD1714927C00FF41D3 /* DCAddEmailsToEventRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746BC1714927C00FF41D3 /* DCAddEmailsToEventRequest.m */; };
+		5FE746C01714929E00FF41D3 /* DCAbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746BF1714929E00FF41D3 /* DCAbstractViewController.m */; };
+		5FE746C3171492B100FF41D3 /* DCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746C2171492B100FF41D3 /* DCHomeViewController.m */; };
+		5FE746C6171492BF00FF41D3 /* DCRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746C5171492BF00FF41D3 /* DCRegistrationViewController.m */; };
+		5FE746C9171492CB00FF41D3 /* DCAddFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746C8171492CB00FF41D3 /* DCAddFriendsViewController.m */; };
+		5FE746CC171492DB00FF41D3 /* DCAbstractListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746CB171492DB00FF41D3 /* DCAbstractListViewController.m */; };
+		5FE746CF171492EE00FF41D3 /* DCEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746CE171492EE00FF41D3 /* DCEventListViewController.m */; };
+		5FE746D2171492FC00FF41D3 /* DCTodoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746D1171492FC00FF41D3 /* DCTodoListViewController.m */; };
+		5FE746D51714930D00FF41D3 /* DCAbstractDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746D41714930D00FF41D3 /* DCAbstractDetailViewController.m */; };
+		5FE746D81714931C00FF41D3 /* DCTodoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746D71714931C00FF41D3 /* DCTodoDetailViewController.m */; };
+		5FE746DB1714933100FF41D3 /* DCAbstractCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746DA1714933100FF41D3 /* DCAbstractCreateViewController.m */; };
+		5FE746DE1714934800FF41D3 /* DCCreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746DD1714934800FF41D3 /* DCCreateEventViewController.m */; };
+		5FE746E11714935700FF41D3 /* DCCreateTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746E01714935700FF41D3 /* DCCreateTodoViewController.m */; };
+		5FE746E41714936500FF41D3 /* DCCreateLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746E31714936500FF41D3 /* DCCreateLocationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +100,93 @@
 		5FDA6B02170A7F370096E47B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5FDA6B04170A7F370096E47B /* Decider_iOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Decider_iOSTests.h; sourceTree = "<group>"; };
 		5FDA6B05170A7F370096E47B /* Decider_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Decider_iOSTests.m; sourceTree = "<group>"; };
+		5FE746611714900900FF41D3 /* DCProjectConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCProjectConstants.h; path = Classes/Constants/DCProjectConstants.h; sourceTree = "<group>"; };
+		5FE746641714902B00FF41D3 /* DCAbstractOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCAbstractOverlay.h; path = Classes/Overlays/Abstract/DCAbstractOverlay.h; sourceTree = "<group>"; };
+		5FE746651714902B00FF41D3 /* DCAbstractOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAbstractOverlay.m; path = Classes/Overlays/Abstract/DCAbstractOverlay.m; sourceTree = "<group>"; };
+		5FE746671714904200FF41D3 /* DCErrorOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCErrorOverlay.h; path = Classes/Overlays/Error/DCErrorOverlay.h; sourceTree = "<group>"; };
+		5FE746681714904200FF41D3 /* DCErrorOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCErrorOverlay.m; path = Classes/Overlays/Error/DCErrorOverlay.m; sourceTree = "<group>"; };
+		5FE7466A1714904E00FF41D3 /* DCInfoOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCInfoOverlay.h; path = Classes/Overlays/Info/DCInfoOverlay.h; sourceTree = "<group>"; };
+		5FE7466B1714904E00FF41D3 /* DCInfoOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCInfoOverlay.m; path = Classes/Overlays/Info/DCInfoOverlay.m; sourceTree = "<group>"; };
+		5FE7466D1714906800FF41D3 /* DCAbstractModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCAbstractModel.h; path = Classes/Models/Abstract/DCAbstractModel.h; sourceTree = "<group>"; };
+		5FE7466E1714906800FF41D3 /* DCAbstractModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAbstractModel.m; path = Classes/Models/Abstract/DCAbstractModel.m; sourceTree = "<group>"; };
+		5FE746701714907800FF41D3 /* DCUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCUserModel.h; path = Classes/Models/User/DCUserModel.h; sourceTree = "<group>"; };
+		5FE746711714907800FF41D3 /* DCUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCUserModel.m; path = Classes/Models/User/DCUserModel.m; sourceTree = "<group>"; };
+		5FE746731714908A00FF41D3 /* DCPartialEventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPartialEventModel.h; path = Classes/Models/Partial/PartialEvent/DCPartialEventModel.h; sourceTree = "<group>"; };
+		5FE746741714908A00FF41D3 /* DCPartialEventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPartialEventModel.m; path = Classes/Models/Partial/PartialEvent/DCPartialEventModel.m; sourceTree = "<group>"; };
+		5FE746761714909900FF41D3 /* DCPartialTodoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPartialTodoModel.h; path = Classes/Models/Partial/PartialTodo/DCPartialTodoModel.h; sourceTree = "<group>"; };
+		5FE746771714909900FF41D3 /* DCPartialTodoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPartialTodoModel.m; path = Classes/Models/Partial/PartialTodo/DCPartialTodoModel.m; sourceTree = "<group>"; };
+		5FE74679171490A700FF41D3 /* DCPartialLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPartialLocationModel.h; path = Classes/Models/Partial/PartialLocation/DCPartialLocationModel.h; sourceTree = "<group>"; };
+		5FE7467A171490A700FF41D3 /* DCPartialLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPartialLocationModel.m; path = Classes/Models/Partial/PartialLocation/DCPartialLocationModel.m; sourceTree = "<group>"; };
+		5FE7467C171490B500FF41D3 /* DCEventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCEventModel.h; path = Classes/Models/Full/Event/DCEventModel.h; sourceTree = "<group>"; };
+		5FE7467D171490B500FF41D3 /* DCEventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCEventModel.m; path = Classes/Models/Full/Event/DCEventModel.m; sourceTree = "<group>"; };
+		5FE7467F171490C600FF41D3 /* DCTodoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCTodoModel.h; path = Classes/Models/Full/Todo/DCTodoModel.h; sourceTree = "<group>"; };
+		5FE74680171490C600FF41D3 /* DCTodoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCTodoModel.m; path = Classes/Models/Full/Todo/DCTodoModel.m; sourceTree = "<group>"; };
+		5FE74682171490D700FF41D3 /* DCLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCLocationModel.h; path = Classes/Models/Full/Location/DCLocationModel.h; sourceTree = "<group>"; };
+		5FE74683171490D700FF41D3 /* DCLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCLocationModel.m; path = Classes/Models/Full/Location/DCLocationModel.m; sourceTree = "<group>"; };
+		5FE74685171490E700FF41D3 /* DCAbstractRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCAbstractRequest.h; path = Classes/Requests/Abstract/DCAbstractRequest.h; sourceTree = "<group>"; };
+		5FE74686171490E700FF41D3 /* DCAbstractRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAbstractRequest.m; path = Classes/Requests/Abstract/DCAbstractRequest.m; sourceTree = "<group>"; };
+		5FE74688171490FE00FF41D3 /* DCAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCAuthenticationRequest.h; path = Classes/Requests/Authentication/DCAuthenticationRequest.h; sourceTree = "<group>"; };
+		5FE74689171490FE00FF41D3 /* DCAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAuthenticationRequest.m; path = Classes/Requests/Authentication/DCAuthenticationRequest.m; sourceTree = "<group>"; };
+		5FE7468B1714910D00FF41D3 /* DCRegistrationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCRegistrationRequest.h; path = Classes/Requests/Registration/DCRegistrationRequest.h; sourceTree = "<group>"; };
+		5FE7468C1714910D00FF41D3 /* DCRegistrationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCRegistrationRequest.m; path = Classes/Requests/Registration/DCRegistrationRequest.m; sourceTree = "<group>"; };
+		5FE7468E1714911900FF41D3 /* DCLocationsForUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCLocationsForUserRequest.h; path = Classes/Requests/Queries/LocationsForUser/DCLocationsForUserRequest.h; sourceTree = "<group>"; };
+		5FE7468F1714911900FF41D3 /* DCLocationsForUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCLocationsForUserRequest.m; path = Classes/Requests/Queries/LocationsForUser/DCLocationsForUserRequest.m; sourceTree = "<group>"; };
+		5FE746911714914800FF41D3 /* DCParticipantsForEventRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCParticipantsForEventRequest.h; path = Classes/Requests/Queries/ParticipantsForEvent/DCParticipantsForEventRequest.h; sourceTree = "<group>"; };
+		5FE746921714914800FF41D3 /* DCParticipantsForEventRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCParticipantsForEventRequest.m; path = Classes/Requests/Queries/ParticipantsForEvent/DCParticipantsForEventRequest.m; sourceTree = "<group>"; };
+		5FE746941714915900FF41D3 /* DCEventsForUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCEventsForUserRequest.h; path = Classes/Requests/Queries/EventsForUser/DCEventsForUserRequest.h; sourceTree = "<group>"; };
+		5FE746951714915900FF41D3 /* DCEventsForUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCEventsForUserRequest.m; path = Classes/Requests/Queries/EventsForUser/DCEventsForUserRequest.m; sourceTree = "<group>"; };
+		5FE746971714916A00FF41D3 /* DCTodosForEventRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCTodosForEventRequest.h; path = Classes/Requests/Queries/TodosForEvent/DCTodosForEventRequest.h; sourceTree = "<group>"; };
+		5FE746981714916A00FF41D3 /* DCTodosForEventRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCTodosForEventRequest.m; path = Classes/Requests/Queries/TodosForEvent/DCTodosForEventRequest.m; sourceTree = "<group>"; };
+		5FE7469A171491B400FF41D3 /* DCGetEventRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCGetEventRequest.h; path = Classes/Requests/Get/GetEvent/DCGetEventRequest.h; sourceTree = "<group>"; };
+		5FE7469B171491B400FF41D3 /* DCGetEventRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCGetEventRequest.m; path = Classes/Requests/Get/GetEvent/DCGetEventRequest.m; sourceTree = "<group>"; };
+		5FE7469D171491C400FF41D3 /* DCGetTodoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCGetTodoRequest.h; path = Classes/Requests/Get/GetTodo/DCGetTodoRequest.h; sourceTree = "<group>"; };
+		5FE7469E171491C400FF41D3 /* DCGetTodoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCGetTodoRequest.m; path = Classes/Requests/Get/GetTodo/DCGetTodoRequest.m; sourceTree = "<group>"; };
+		5FE746A0171491D900FF41D3 /* DCGetLocationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCGetLocationRequest.h; path = Classes/Requests/Get/GetLocation/DCGetLocationRequest.h; sourceTree = "<group>"; };
+		5FE746A1171491D900FF41D3 /* DCGetLocationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCGetLocationRequest.m; path = Classes/Requests/Get/GetLocation/DCGetLocationRequest.m; sourceTree = "<group>"; };
+		5FE746A3171491EA00FF41D3 /* DCGetUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCGetUserRequest.h; path = Classes/Requests/Get/GetUser/DCGetUserRequest.h; sourceTree = "<group>"; };
+		5FE746A4171491EA00FF41D3 /* DCGetUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCGetUserRequest.m; path = Classes/Requests/Get/GetUser/DCGetUserRequest.m; sourceTree = "<group>"; };
+		5FE746A6171491FD00FF41D3 /* DCCreateEventRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCreateEventRequest.h; path = Classes/Requests/Create/CreateEvent/DCCreateEventRequest.h; sourceTree = "<group>"; };
+		5FE746A7171491FD00FF41D3 /* DCCreateEventRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCreateEventRequest.m; path = Classes/Requests/Create/CreateEvent/DCCreateEventRequest.m; sourceTree = "<group>"; };
+		5FE746A91714920D00FF41D3 /* DCCreateTodoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCreateTodoRequest.h; path = Classes/Requests/Create/CreateTodo/DCCreateTodoRequest.h; sourceTree = "<group>"; };
+		5FE746AA1714920D00FF41D3 /* DCCreateTodoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCreateTodoRequest.m; path = Classes/Requests/Create/CreateTodo/DCCreateTodoRequest.m; sourceTree = "<group>"; };
+		5FE746AC1714921C00FF41D3 /* DCCreateLocationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCreateLocationRequest.h; path = Classes/Requests/Create/CreateLocation/DCCreateLocationRequest.h; sourceTree = "<group>"; };
+		5FE746AD1714921C00FF41D3 /* DCCreateLocationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCreateLocationRequest.m; path = Classes/Requests/Create/CreateLocation/DCCreateLocationRequest.m; sourceTree = "<group>"; };
+		5FE746AF1714922D00FF41D3 /* DCAddParticipantsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCAddParticipantsRequest.h; path = Classes/Requests/AddRemove/AddParticipants/DCAddParticipantsRequest.h; sourceTree = "<group>"; };
+		5FE746B01714922D00FF41D3 /* DCAddParticipantsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAddParticipantsRequest.m; path = Classes/Requests/AddRemove/AddParticipants/DCAddParticipantsRequest.m; sourceTree = "<group>"; };
+		5FE746B21714924200FF41D3 /* DCRemoveParticipantsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCRemoveParticipantsRequest.h; path = Classes/Requests/AddRemove/RemoveParticipants/DCRemoveParticipantsRequest.h; sourceTree = "<group>"; };
+		5FE746B31714924200FF41D3 /* DCRemoveParticipantsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCRemoveParticipantsRequest.m; path = Classes/Requests/AddRemove/RemoveParticipants/DCRemoveParticipantsRequest.m; sourceTree = "<group>"; };
+		5FE746B51714925300FF41D3 /* DCAddPointsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCAddPointsRequest.h; path = Classes/Requests/AddRemove/AddPoints/DCAddPointsRequest.h; sourceTree = "<group>"; };
+		5FE746B61714925300FF41D3 /* DCAddPointsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAddPointsRequest.m; path = Classes/Requests/AddRemove/AddPoints/DCAddPointsRequest.m; sourceTree = "<group>"; };
+		5FE746B81714926400FF41D3 /* DCRemovePointsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCRemovePointsRequest.h; path = Classes/Requests/AddRemove/RemovePoints/DCRemovePointsRequest.h; sourceTree = "<group>"; };
+		5FE746B91714926400FF41D3 /* DCRemovePointsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCRemovePointsRequest.m; path = Classes/Requests/AddRemove/RemovePoints/DCRemovePointsRequest.m; sourceTree = "<group>"; };
+		5FE746BB1714927C00FF41D3 /* DCAddEmailsToEventRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCAddEmailsToEventRequest.h; path = Classes/Requests/AddRemove/AddEmailsToEvent/DCAddEmailsToEventRequest.h; sourceTree = "<group>"; };
+		5FE746BC1714927C00FF41D3 /* DCAddEmailsToEventRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAddEmailsToEventRequest.m; path = Classes/Requests/AddRemove/AddEmailsToEvent/DCAddEmailsToEventRequest.m; sourceTree = "<group>"; };
+		5FE746BE1714929E00FF41D3 /* DCAbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCAbstractViewController.h; path = Classes/ViewControllers/Abstract/DCAbstractViewController.h; sourceTree = "<group>"; };
+		5FE746BF1714929E00FF41D3 /* DCAbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAbstractViewController.m; path = Classes/ViewControllers/Abstract/DCAbstractViewController.m; sourceTree = "<group>"; };
+		5FE746C1171492B100FF41D3 /* DCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCHomeViewController.h; path = Classes/ViewControllers/Home/DCHomeViewController.h; sourceTree = "<group>"; };
+		5FE746C2171492B100FF41D3 /* DCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCHomeViewController.m; path = Classes/ViewControllers/Home/DCHomeViewController.m; sourceTree = "<group>"; };
+		5FE746C4171492BF00FF41D3 /* DCRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCRegistrationViewController.h; path = Classes/ViewControllers/Registration/DCRegistrationViewController.h; sourceTree = "<group>"; };
+		5FE746C5171492BF00FF41D3 /* DCRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCRegistrationViewController.m; path = Classes/ViewControllers/Registration/DCRegistrationViewController.m; sourceTree = "<group>"; };
+		5FE746C7171492CB00FF41D3 /* DCAddFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCAddFriendsViewController.h; path = Classes/ViewControllers/AddFriends/DCAddFriendsViewController.h; sourceTree = "<group>"; };
+		5FE746C8171492CB00FF41D3 /* DCAddFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAddFriendsViewController.m; path = Classes/ViewControllers/AddFriends/DCAddFriendsViewController.m; sourceTree = "<group>"; };
+		5FE746CA171492DB00FF41D3 /* DCAbstractListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCAbstractListViewController.h; path = Classes/ViewControllers/List/AbstractList/DCAbstractListViewController.h; sourceTree = "<group>"; };
+		5FE746CB171492DB00FF41D3 /* DCAbstractListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAbstractListViewController.m; path = Classes/ViewControllers/List/AbstractList/DCAbstractListViewController.m; sourceTree = "<group>"; };
+		5FE746CD171492EE00FF41D3 /* DCEventListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCEventListViewController.h; path = Classes/ViewControllers/List/EventList/DCEventListViewController.h; sourceTree = "<group>"; };
+		5FE746CE171492EE00FF41D3 /* DCEventListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCEventListViewController.m; path = Classes/ViewControllers/List/EventList/DCEventListViewController.m; sourceTree = "<group>"; };
+		5FE746D0171492FC00FF41D3 /* DCTodoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCTodoListViewController.h; path = Classes/ViewControllers/List/TodoList/DCTodoListViewController.h; sourceTree = "<group>"; };
+		5FE746D1171492FC00FF41D3 /* DCTodoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCTodoListViewController.m; path = Classes/ViewControllers/List/TodoList/DCTodoListViewController.m; sourceTree = "<group>"; };
+		5FE746D31714930D00FF41D3 /* DCAbstractDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCAbstractDetailViewController.h; path = Classes/ViewControllers/Detail/AbstractDetail/DCAbstractDetailViewController.h; sourceTree = "<group>"; };
+		5FE746D41714930D00FF41D3 /* DCAbstractDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAbstractDetailViewController.m; path = Classes/ViewControllers/Detail/AbstractDetail/DCAbstractDetailViewController.m; sourceTree = "<group>"; };
+		5FE746D61714931C00FF41D3 /* DCTodoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCTodoDetailViewController.h; path = Classes/ViewControllers/Detail/TodoDetail/DCTodoDetailViewController.h; sourceTree = "<group>"; };
+		5FE746D71714931C00FF41D3 /* DCTodoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCTodoDetailViewController.m; path = Classes/ViewControllers/Detail/TodoDetail/DCTodoDetailViewController.m; sourceTree = "<group>"; };
+		5FE746D91714933100FF41D3 /* DCAbstractCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCAbstractCreateViewController.h; path = Classes/ViewControllers/Create/AbstractCreate/DCAbstractCreateViewController.h; sourceTree = "<group>"; };
+		5FE746DA1714933100FF41D3 /* DCAbstractCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCAbstractCreateViewController.m; path = Classes/ViewControllers/Create/AbstractCreate/DCAbstractCreateViewController.m; sourceTree = "<group>"; };
+		5FE746DC1714934800FF41D3 /* DCCreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCreateEventViewController.h; path = Classes/ViewControllers/Create/CreateEvent/DCCreateEventViewController.h; sourceTree = "<group>"; };
+		5FE746DD1714934800FF41D3 /* DCCreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCreateEventViewController.m; path = Classes/ViewControllers/Create/CreateEvent/DCCreateEventViewController.m; sourceTree = "<group>"; };
+		5FE746DF1714935700FF41D3 /* DCCreateTodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCreateTodoViewController.h; path = Classes/ViewControllers/Create/CreateTodo/DCCreateTodoViewController.h; sourceTree = "<group>"; };
+		5FE746E01714935700FF41D3 /* DCCreateTodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCreateTodoViewController.m; path = Classes/ViewControllers/Create/CreateTodo/DCCreateTodoViewController.m; sourceTree = "<group>"; };
+		5FE746E21714936500FF41D3 /* DCCreateLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCreateLocationViewController.h; path = Classes/ViewControllers/Create/CreateLocation/DCCreateLocationViewController.h; sourceTree = "<group>"; };
+		5FE746E31714936500FF41D3 /* DCCreateLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCreateLocationViewController.m; path = Classes/ViewControllers/Create/CreateLocation/DCCreateLocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +246,11 @@
 		5FDA6AD7170A7F360096E47B /* Decider-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5FE746541713AB7800FF41D3 /* Constants */,
+				5FE7461F1713A5C500FF41D3 /* Overlays */,
+				5FE7461E1713A5C300FF41D3 /* Models */,
+				5FE7461D1713A5C200FF41D3 /* Requests */,
+				5FE7461C1713A5BB00FF41D3 /* ViewControllers */,
 				5FDA6AE9170A7F370096E47B /* MainStoryboard_iPhone.storyboard */,
 				5FDA6AEC170A7F370096E47B /* MainStoryboard_iPad.storyboard */,
 				5FDA6AE0170A7F370096E47B /* DCAppDelegate.h */,
@@ -156,6 +291,544 @@
 				5FDA6B01170A7F370096E47B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FE7461C1713A5BB00FF41D3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746461713A9A500FF41D3 /* Abstract */,
+				5FE746481713A9B000FF41D3 /* Home */,
+				5FE746471713A9AE00FF41D3 /* Registration */,
+				5FE746531713AA7200FF41D3 /* AddFriends */,
+				5FE746451713A9A400FF41D3 /* List */,
+				5FE7464E1713AA2F00FF41D3 /* Detail */,
+				5FE746491713A9EF00FF41D3 /* Create */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5FE7461D1713A5C200FF41D3 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7462D1713A83500FF41D3 /* Abstract */,
+				5FE7463F1713A8E600FF41D3 /* Authentication */,
+				5FE7463E1713A8E300FF41D3 /* Registration */,
+				5FE746421713A99100FF41D3 /* Queries */,
+				5FE746401713A97800FF41D3 /* Get */,
+				5FE746411713A98500FF41D3 /* Create */,
+				5FE746431713A99C00FF41D3 /* AddRemove */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		5FE7461E1713A5C300FF41D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7462A1713A61F00FF41D3 /* Abstract */,
+				5FE746291713A61D00FF41D3 /* User */,
+				5FE7462B1713A82200FF41D3 /* Partial */,
+				5FE7462C1713A82900FF41D3 /* Full */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5FE7461F1713A5C500FF41D3 /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746221713A5E500FF41D3 /* Abstract */,
+				5FE746211713A5E400FF41D3 /* Error */,
+				5FE746201713A5E200FF41D3 /* Info */,
+			);
+			name = Overlays;
+			sourceTree = "<group>";
+		};
+		5FE746201713A5E200FF41D3 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7466A1714904E00FF41D3 /* DCInfoOverlay.h */,
+				5FE7466B1714904E00FF41D3 /* DCInfoOverlay.m */,
+			);
+			name = Info;
+			sourceTree = "<group>";
+		};
+		5FE746211713A5E400FF41D3 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746671714904200FF41D3 /* DCErrorOverlay.h */,
+				5FE746681714904200FF41D3 /* DCErrorOverlay.m */,
+			);
+			name = Error;
+			sourceTree = "<group>";
+		};
+		5FE746221713A5E500FF41D3 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746641714902B00FF41D3 /* DCAbstractOverlay.h */,
+				5FE746651714902B00FF41D3 /* DCAbstractOverlay.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		5FE746231713A5F100FF41D3 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				5FE74682171490D700FF41D3 /* DCLocationModel.h */,
+				5FE74683171490D700FF41D3 /* DCLocationModel.m */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		5FE746241713A61400FF41D3 /* PartialLocation */ = {
+			isa = PBXGroup;
+			children = (
+				5FE74679171490A700FF41D3 /* DCPartialLocationModel.h */,
+				5FE7467A171490A700FF41D3 /* DCPartialLocationModel.m */,
+			);
+			name = PartialLocation;
+			sourceTree = "<group>";
+		};
+		5FE746251713A61600FF41D3 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7467F171490C600FF41D3 /* DCTodoModel.h */,
+				5FE74680171490C600FF41D3 /* DCTodoModel.m */,
+			);
+			name = Todo;
+			sourceTree = "<group>";
+		};
+		5FE746261713A61700FF41D3 /* PartialTodo */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746761714909900FF41D3 /* DCPartialTodoModel.h */,
+				5FE746771714909900FF41D3 /* DCPartialTodoModel.m */,
+			);
+			name = PartialTodo;
+			sourceTree = "<group>";
+		};
+		5FE746271713A61900FF41D3 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7467C171490B500FF41D3 /* DCEventModel.h */,
+				5FE7467D171490B500FF41D3 /* DCEventModel.m */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		5FE746281713A61B00FF41D3 /* PartialEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746731714908A00FF41D3 /* DCPartialEventModel.h */,
+				5FE746741714908A00FF41D3 /* DCPartialEventModel.m */,
+			);
+			name = PartialEvent;
+			sourceTree = "<group>";
+		};
+		5FE746291713A61D00FF41D3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746701714907800FF41D3 /* DCUserModel.h */,
+				5FE746711714907800FF41D3 /* DCUserModel.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		5FE7462A1713A61F00FF41D3 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7466D1714906800FF41D3 /* DCAbstractModel.h */,
+				5FE7466E1714906800FF41D3 /* DCAbstractModel.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		5FE7462B1713A82200FF41D3 /* Partial */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746281713A61B00FF41D3 /* PartialEvent */,
+				5FE746261713A61700FF41D3 /* PartialTodo */,
+				5FE746241713A61400FF41D3 /* PartialLocation */,
+			);
+			name = Partial;
+			sourceTree = "<group>";
+		};
+		5FE7462C1713A82900FF41D3 /* Full */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746271713A61900FF41D3 /* Event */,
+				5FE746251713A61600FF41D3 /* Todo */,
+				5FE746231713A5F100FF41D3 /* Location */,
+			);
+			name = Full;
+			sourceTree = "<group>";
+		};
+		5FE7462D1713A83500FF41D3 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				5FE74685171490E700FF41D3 /* DCAbstractRequest.h */,
+				5FE74686171490E700FF41D3 /* DCAbstractRequest.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		5FE7462E1713A8BF00FF41D3 /* AddEmailsToEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746BB1714927C00FF41D3 /* DCAddEmailsToEventRequest.h */,
+				5FE746BC1714927C00FF41D3 /* DCAddEmailsToEventRequest.m */,
+			);
+			name = AddEmailsToEvent;
+			sourceTree = "<group>";
+		};
+		5FE7462F1713A8C000FF41D3 /* RemovePoints */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746B81714926400FF41D3 /* DCRemovePointsRequest.h */,
+				5FE746B91714926400FF41D3 /* DCRemovePointsRequest.m */,
+			);
+			name = RemovePoints;
+			sourceTree = "<group>";
+		};
+		5FE746301713A8C300FF41D3 /* AddPoints */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746B51714925300FF41D3 /* DCAddPointsRequest.h */,
+				5FE746B61714925300FF41D3 /* DCAddPointsRequest.m */,
+			);
+			name = AddPoints;
+			sourceTree = "<group>";
+		};
+		5FE746311713A8C700FF41D3 /* RemoveParticipants */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746B21714924200FF41D3 /* DCRemoveParticipantsRequest.h */,
+				5FE746B31714924200FF41D3 /* DCRemoveParticipantsRequest.m */,
+			);
+			name = RemoveParticipants;
+			sourceTree = "<group>";
+		};
+		5FE746321713A8C900FF41D3 /* AddParticipants */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746AF1714922D00FF41D3 /* DCAddParticipantsRequest.h */,
+				5FE746B01714922D00FF41D3 /* DCAddParticipantsRequest.m */,
+			);
+			name = AddParticipants;
+			sourceTree = "<group>";
+		};
+		5FE746331713A8CB00FF41D3 /* CreateLocation */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746AC1714921C00FF41D3 /* DCCreateLocationRequest.h */,
+				5FE746AD1714921C00FF41D3 /* DCCreateLocationRequest.m */,
+			);
+			name = CreateLocation;
+			sourceTree = "<group>";
+		};
+		5FE746341713A8CE00FF41D3 /* CreateTodo */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746A91714920D00FF41D3 /* DCCreateTodoRequest.h */,
+				5FE746AA1714920D00FF41D3 /* DCCreateTodoRequest.m */,
+			);
+			name = CreateTodo;
+			sourceTree = "<group>";
+		};
+		5FE746351713A8D000FF41D3 /* CreateEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746A6171491FD00FF41D3 /* DCCreateEventRequest.h */,
+				5FE746A7171491FD00FF41D3 /* DCCreateEventRequest.m */,
+			);
+			name = CreateEvent;
+			sourceTree = "<group>";
+		};
+		5FE746361713A8D300FF41D3 /* GetUser */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746A3171491EA00FF41D3 /* DCGetUserRequest.h */,
+				5FE746A4171491EA00FF41D3 /* DCGetUserRequest.m */,
+			);
+			name = GetUser;
+			sourceTree = "<group>";
+		};
+		5FE746371713A8D500FF41D3 /* GetLocation */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746A0171491D900FF41D3 /* DCGetLocationRequest.h */,
+				5FE746A1171491D900FF41D3 /* DCGetLocationRequest.m */,
+			);
+			name = GetLocation;
+			sourceTree = "<group>";
+		};
+		5FE746381713A8D800FF41D3 /* GetTodo */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7469D171491C400FF41D3 /* DCGetTodoRequest.h */,
+				5FE7469E171491C400FF41D3 /* DCGetTodoRequest.m */,
+			);
+			name = GetTodo;
+			sourceTree = "<group>";
+		};
+		5FE746391713A8DA00FF41D3 /* GetEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7469A171491B400FF41D3 /* DCGetEventRequest.h */,
+				5FE7469B171491B400FF41D3 /* DCGetEventRequest.m */,
+			);
+			name = GetEvent;
+			sourceTree = "<group>";
+		};
+		5FE7463A1713A8DC00FF41D3 /* TodosForEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746971714916A00FF41D3 /* DCTodosForEventRequest.h */,
+				5FE746981714916A00FF41D3 /* DCTodosForEventRequest.m */,
+			);
+			name = TodosForEvent;
+			sourceTree = "<group>";
+		};
+		5FE7463B1713A8DE00FF41D3 /* EventsForUser */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746941714915900FF41D3 /* DCEventsForUserRequest.h */,
+				5FE746951714915900FF41D3 /* DCEventsForUserRequest.m */,
+			);
+			name = EventsForUser;
+			sourceTree = "<group>";
+		};
+		5FE7463C1713A8E000FF41D3 /* ParticipantsForEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746911714914800FF41D3 /* DCParticipantsForEventRequest.h */,
+				5FE746921714914800FF41D3 /* DCParticipantsForEventRequest.m */,
+			);
+			name = ParticipantsForEvent;
+			sourceTree = "<group>";
+		};
+		5FE7463D1713A8E200FF41D3 /* LocationsForUser */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7468E1714911900FF41D3 /* DCLocationsForUserRequest.h */,
+				5FE7468F1714911900FF41D3 /* DCLocationsForUserRequest.m */,
+			);
+			name = LocationsForUser;
+			sourceTree = "<group>";
+		};
+		5FE7463E1713A8E300FF41D3 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7468B1714910D00FF41D3 /* DCRegistrationRequest.h */,
+				5FE7468C1714910D00FF41D3 /* DCRegistrationRequest.m */,
+			);
+			name = Registration;
+			sourceTree = "<group>";
+		};
+		5FE7463F1713A8E600FF41D3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5FE74688171490FE00FF41D3 /* DCAuthenticationRequest.h */,
+				5FE74689171490FE00FF41D3 /* DCAuthenticationRequest.m */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		5FE746401713A97800FF41D3 /* Get */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746391713A8DA00FF41D3 /* GetEvent */,
+				5FE746381713A8D800FF41D3 /* GetTodo */,
+				5FE746371713A8D500FF41D3 /* GetLocation */,
+				5FE746361713A8D300FF41D3 /* GetUser */,
+			);
+			name = Get;
+			sourceTree = "<group>";
+		};
+		5FE746411713A98500FF41D3 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746351713A8D000FF41D3 /* CreateEvent */,
+				5FE746341713A8CE00FF41D3 /* CreateTodo */,
+				5FE746331713A8CB00FF41D3 /* CreateLocation */,
+			);
+			name = Create;
+			sourceTree = "<group>";
+		};
+		5FE746421713A99100FF41D3 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7463D1713A8E200FF41D3 /* LocationsForUser */,
+				5FE7463C1713A8E000FF41D3 /* ParticipantsForEvent */,
+				5FE7463B1713A8DE00FF41D3 /* EventsForUser */,
+				5FE7463A1713A8DC00FF41D3 /* TodosForEvent */,
+			);
+			name = Queries;
+			sourceTree = "<group>";
+		};
+		5FE746431713A99C00FF41D3 /* AddRemove */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746321713A8C900FF41D3 /* AddParticipants */,
+				5FE746311713A8C700FF41D3 /* RemoveParticipants */,
+				5FE746301713A8C300FF41D3 /* AddPoints */,
+				5FE7462F1713A8C000FF41D3 /* RemovePoints */,
+				5FE7462E1713A8BF00FF41D3 /* AddEmailsToEvent */,
+			);
+			name = AddRemove;
+			sourceTree = "<group>";
+		};
+		5FE746441713A9A200FF41D3 /* TodoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746D61714931C00FF41D3 /* DCTodoDetailViewController.h */,
+				5FE746D71714931C00FF41D3 /* DCTodoDetailViewController.m */,
+			);
+			name = TodoDetail;
+			sourceTree = "<group>";
+		};
+		5FE746451713A9A400FF41D3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746511713AA4A00FF41D3 /* AbstractList */,
+				5FE746501713AA4800FF41D3 /* EventList */,
+				5FE7464D1713AA2D00FF41D3 /* TodoList */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		5FE746461713A9A500FF41D3 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746BE1714929E00FF41D3 /* DCAbstractViewController.h */,
+				5FE746BF1714929E00FF41D3 /* DCAbstractViewController.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		5FE746471713A9AE00FF41D3 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746C4171492BF00FF41D3 /* DCRegistrationViewController.h */,
+				5FE746C5171492BF00FF41D3 /* DCRegistrationViewController.m */,
+			);
+			name = Registration;
+			sourceTree = "<group>";
+		};
+		5FE746481713A9B000FF41D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746C1171492B100FF41D3 /* DCHomeViewController.h */,
+				5FE746C2171492B100FF41D3 /* DCHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		5FE746491713A9EF00FF41D3 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746561713ABEB00FF41D3 /* AbstractCreate */,
+				5FE7464C1713A9FA00FF41D3 /* CreateEvent */,
+				5FE7464B1713A9F900FF41D3 /* CreateTodo */,
+				5FE7464A1713A9F600FF41D3 /* CreateLocation */,
+			);
+			name = Create;
+			sourceTree = "<group>";
+		};
+		5FE7464A1713A9F600FF41D3 /* CreateLocation */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746E21714936500FF41D3 /* DCCreateLocationViewController.h */,
+				5FE746E31714936500FF41D3 /* DCCreateLocationViewController.m */,
+			);
+			name = CreateLocation;
+			sourceTree = "<group>";
+		};
+		5FE7464B1713A9F900FF41D3 /* CreateTodo */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746DF1714935700FF41D3 /* DCCreateTodoViewController.h */,
+				5FE746E01714935700FF41D3 /* DCCreateTodoViewController.m */,
+			);
+			name = CreateTodo;
+			sourceTree = "<group>";
+		};
+		5FE7464C1713A9FA00FF41D3 /* CreateEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746DC1714934800FF41D3 /* DCCreateEventViewController.h */,
+				5FE746DD1714934800FF41D3 /* DCCreateEventViewController.m */,
+			);
+			name = CreateEvent;
+			sourceTree = "<group>";
+		};
+		5FE7464D1713AA2D00FF41D3 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746D0171492FC00FF41D3 /* DCTodoListViewController.h */,
+				5FE746D1171492FC00FF41D3 /* DCTodoListViewController.m */,
+			);
+			name = TodoList;
+			sourceTree = "<group>";
+		};
+		5FE7464E1713AA2F00FF41D3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7464F1713AA3500FF41D3 /* AbstractDetail */,
+				5FE746441713A9A200FF41D3 /* TodoDetail */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		5FE7464F1713AA3500FF41D3 /* AbstractDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746D31714930D00FF41D3 /* DCAbstractDetailViewController.h */,
+				5FE746D41714930D00FF41D3 /* DCAbstractDetailViewController.m */,
+			);
+			name = AbstractDetail;
+			sourceTree = "<group>";
+		};
+		5FE746501713AA4800FF41D3 /* EventList */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746CD171492EE00FF41D3 /* DCEventListViewController.h */,
+				5FE746CE171492EE00FF41D3 /* DCEventListViewController.m */,
+			);
+			name = EventList;
+			sourceTree = "<group>";
+		};
+		5FE746511713AA4A00FF41D3 /* AbstractList */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746CA171492DB00FF41D3 /* DCAbstractListViewController.h */,
+				5FE746CB171492DB00FF41D3 /* DCAbstractListViewController.m */,
+			);
+			name = AbstractList;
+			sourceTree = "<group>";
+		};
+		5FE746531713AA7200FF41D3 /* AddFriends */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746C7171492CB00FF41D3 /* DCAddFriendsViewController.h */,
+				5FE746C8171492CB00FF41D3 /* DCAddFriendsViewController.m */,
+			);
+			name = AddFriends;
+			sourceTree = "<group>";
+		};
+		5FE746541713AB7800FF41D3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746611714900900FF41D3 /* DCProjectConstants.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		5FE746561713ABEB00FF41D3 /* AbstractCreate */ = {
+			isa = PBXGroup;
+			children = (
+				5FE746D91714933100FF41D3 /* DCAbstractCreateViewController.h */,
+				5FE746DA1714933100FF41D3 /* DCAbstractCreateViewController.m */,
+			);
+			name = AbstractCreate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +945,49 @@
 			files = (
 				5FDA6ADE170A7F360096E47B /* main.m in Sources */,
 				5FDA6AE2170A7F370096E47B /* DCAppDelegate.m in Sources */,
+				5FE746661714902B00FF41D3 /* DCAbstractOverlay.m in Sources */,
+				5FE746691714904200FF41D3 /* DCErrorOverlay.m in Sources */,
+				5FE7466C1714904E00FF41D3 /* DCInfoOverlay.m in Sources */,
+				5FE7466F1714906800FF41D3 /* DCAbstractModel.m in Sources */,
+				5FE746721714907800FF41D3 /* DCUserModel.m in Sources */,
+				5FE746751714908A00FF41D3 /* DCPartialEventModel.m in Sources */,
+				5FE746781714909900FF41D3 /* DCPartialTodoModel.m in Sources */,
+				5FE7467B171490A700FF41D3 /* DCPartialLocationModel.m in Sources */,
+				5FE7467E171490B500FF41D3 /* DCEventModel.m in Sources */,
+				5FE74681171490C600FF41D3 /* DCTodoModel.m in Sources */,
+				5FE74684171490D700FF41D3 /* DCLocationModel.m in Sources */,
+				5FE74687171490E700FF41D3 /* DCAbstractRequest.m in Sources */,
+				5FE7468A171490FE00FF41D3 /* DCAuthenticationRequest.m in Sources */,
+				5FE7468D1714910D00FF41D3 /* DCRegistrationRequest.m in Sources */,
+				5FE746901714911900FF41D3 /* DCLocationsForUserRequest.m in Sources */,
+				5FE746931714914800FF41D3 /* DCParticipantsForEventRequest.m in Sources */,
+				5FE746961714915900FF41D3 /* DCEventsForUserRequest.m in Sources */,
+				5FE746991714916A00FF41D3 /* DCTodosForEventRequest.m in Sources */,
+				5FE7469C171491B400FF41D3 /* DCGetEventRequest.m in Sources */,
+				5FE7469F171491C400FF41D3 /* DCGetTodoRequest.m in Sources */,
+				5FE746A2171491D900FF41D3 /* DCGetLocationRequest.m in Sources */,
+				5FE746A5171491EA00FF41D3 /* DCGetUserRequest.m in Sources */,
+				5FE746A8171491FD00FF41D3 /* DCCreateEventRequest.m in Sources */,
+				5FE746AB1714920D00FF41D3 /* DCCreateTodoRequest.m in Sources */,
+				5FE746AE1714921C00FF41D3 /* DCCreateLocationRequest.m in Sources */,
+				5FE746B11714922D00FF41D3 /* DCAddParticipantsRequest.m in Sources */,
+				5FE746B41714924200FF41D3 /* DCRemoveParticipantsRequest.m in Sources */,
+				5FE746B71714925300FF41D3 /* DCAddPointsRequest.m in Sources */,
+				5FE746BA1714926400FF41D3 /* DCRemovePointsRequest.m in Sources */,
+				5FE746BD1714927C00FF41D3 /* DCAddEmailsToEventRequest.m in Sources */,
+				5FE746C01714929E00FF41D3 /* DCAbstractViewController.m in Sources */,
+				5FE746C3171492B100FF41D3 /* DCHomeViewController.m in Sources */,
+				5FE746C6171492BF00FF41D3 /* DCRegistrationViewController.m in Sources */,
+				5FE746C9171492CB00FF41D3 /* DCAddFriendsViewController.m in Sources */,
+				5FE746CC171492DB00FF41D3 /* DCAbstractListViewController.m in Sources */,
+				5FE746CF171492EE00FF41D3 /* DCEventListViewController.m in Sources */,
+				5FE746D2171492FC00FF41D3 /* DCTodoListViewController.m in Sources */,
+				5FE746D51714930D00FF41D3 /* DCAbstractDetailViewController.m in Sources */,
+				5FE746D81714931C00FF41D3 /* DCTodoDetailViewController.m in Sources */,
+				5FE746DB1714933100FF41D3 /* DCAbstractCreateViewController.m in Sources */,
+				5FE746DE1714934800FF41D3 /* DCCreateEventViewController.m in Sources */,
+				5FE746E11714935700FF41D3 /* DCCreateTodoViewController.m in Sources */,
+				5FE746E41714936500FF41D3 /* DCCreateLocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +1110,7 @@
 				GCC_PREFIX_HEADER = "Decider-iOS/Decider-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Decider-iOS/Decider-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,6 +1122,7 @@
 				GCC_PREFIX_HEADER = "Decider-iOS/Decider-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Decider-iOS/Decider-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -462,6 +1180,7 @@
 				5FDA6B0B170A7F370096E47B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FDA6B0C170A7F370096E47B /* Build configuration list for PBXNativeTarget "Decider-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +1189,7 @@
 				5FDA6B0E170A7F370096E47B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

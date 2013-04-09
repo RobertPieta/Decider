@@ -10,4 +10,7 @@
 
 @interface DCAbstractModel : NSObject
 
+-(id)initWithJSONDictionary:(NSDictionary*)dict;
+-(NSArray*)modelsWithArrayOfJSONDictionaries:(NSArray*)array;
+
 @end

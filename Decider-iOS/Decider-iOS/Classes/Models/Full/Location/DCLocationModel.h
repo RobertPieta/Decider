@@ -9,5 +9,9 @@
 #import "DCPartialLocationModel.h"
 
 @interface DCLocationModel : DCPartialLocationModel
+@property(nonatomic, strong) NSString *street;
+@property(nonatomic, strong) NSString *street_num;
+@property(nonatomic, strong) NSString *city;
+@property(nonatomic, strong) NSString *state;
 
 @end

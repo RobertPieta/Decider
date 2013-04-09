@@ -9,5 +9,9 @@
 #import "DCAbstractModel.h"
 
 @interface DCPartialLocationModel : DCAbstractModel
+@property(nonatomic, strong) NSString *lid;
+@property(nonatomic, strong) NSString *title;
+@property(nonatomic, strong) NSString *lat;
+@property(nonatomic, strong) NSString *lon;
 
 @end

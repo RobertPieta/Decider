@@ -9,5 +9,6 @@
 #import "DCPartialEventModel.h"
 
 @interface DCEventModel : DCPartialEventModel
+@property(nonatomic, strong) NSString *description;
 
 @end

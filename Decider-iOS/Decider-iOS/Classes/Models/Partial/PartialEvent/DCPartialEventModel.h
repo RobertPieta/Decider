@@ -9,5 +9,8 @@
 #import "DCAbstractModel.h"
 
 @interface DCPartialEventModel : DCAbstractModel
+@property(nonatomic, strong) NSString *eid;
+@property(nonatomic, strong) NSString *adminFBId;
+@property(nonatomic, strong) NSString *title;
 
 @end

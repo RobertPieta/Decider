@@ -8,6 +8,9 @@
 
 #import "DCPartialTodoModel.h"
 
+@class DCLocationModel;
 @interface DCTodoModel : DCPartialTodoModel
+@property(nonatomic, strong) NSString *description;
+@property(nonatomic, strong) DCLocationModel *location;
 
 @end

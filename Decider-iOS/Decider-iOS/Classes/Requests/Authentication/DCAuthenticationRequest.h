@@ -9,5 +9,11 @@
 #import "DCAbstractRequest.h"
 
 @interface DCAuthenticationRequest : DCAbstractRequest
+@property(nonatomic, strong, readonly) NSString *email;
+@property(nonatomic, strong, readonly) NSString *password;
+
+-(id)initRequestWithEmail:(NSString*)email andPassword:(NSString*)password;
+
+
 
 @end

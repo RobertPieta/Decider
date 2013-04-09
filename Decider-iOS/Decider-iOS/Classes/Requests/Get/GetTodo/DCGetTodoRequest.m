@@ -10,4 +10,18 @@
 
 @implementation DCGetTodoRequest
 
+-(id)initRequestWithTodoId:(NSString *)tdid {
+    if(self = [super initRequest]) {
+        _tdid = tdid;
+    }
+    return self;
+}
+
+#pragma mark -
+#pragma mark Request Methods
+
+-(void)startRequest {
+    urlExt = [NSString stringWithFormat:URL_Request_Todo,_tdid];
+}
+
 @end

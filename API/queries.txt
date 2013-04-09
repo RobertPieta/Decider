@@ -127,7 +127,7 @@ Section 2: Queries
 
 ### Get User [GET] https://decider.azurewindows.com/api/user.php
 # Required
-    fid    : the Facebook id of the user
+    fbid    : the Facebook id of the user
 
 # Return
 {

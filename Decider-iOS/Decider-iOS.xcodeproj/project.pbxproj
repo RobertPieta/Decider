@@ -66,6 +66,9 @@
 		5FE746DE1714934800FF41D3 /* DCCreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746DD1714934800FF41D3 /* DCCreateEventViewController.m */; };
 		5FE746E11714935700FF41D3 /* DCCreateTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746E01714935700FF41D3 /* DCCreateTodoViewController.m */; };
 		5FE746E41714936500FF41D3 /* DCCreateLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE746E31714936500FF41D3 /* DCCreateLocationViewController.m */; };
+		5FE7474F1714BA8D00FF41D3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7474E1714BA8D00FF41D3 /* Reachability.m */; };
+		5FE747511714D20200FF41D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE747501714D1FB00FF41D3 /* SystemConfiguration.framework */; };
+		5FE747521714D22A00FF41D3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7474E1714BA8D00FF41D3 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +190,10 @@
 		5FE746E01714935700FF41D3 /* DCCreateTodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCreateTodoViewController.m; path = Classes/ViewControllers/Create/CreateTodo/DCCreateTodoViewController.m; sourceTree = "<group>"; };
 		5FE746E21714936500FF41D3 /* DCCreateLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCreateLocationViewController.h; path = Classes/ViewControllers/Create/CreateLocation/DCCreateLocationViewController.h; sourceTree = "<group>"; };
 		5FE746E31714936500FF41D3 /* DCCreateLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCreateLocationViewController.m; path = Classes/ViewControllers/Create/CreateLocation/DCCreateLocationViewController.m; sourceTree = "<group>"; };
+		5FE747421714AE9D00FF41D3 /* DCRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCRequestProtocol.h; path = Classes/Requests/Abstract/DCRequestProtocol.h; sourceTree = "<group>"; };
+		5FE7474D1714BA8D00FF41D3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Classes/Requests/Abstract/Reachability/Reachability.h; sourceTree = "<group>"; };
+		5FE7474E1714BA8D00FF41D3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Classes/Requests/Abstract/Reachability/Reachability.m; sourceTree = "<group>"; };
+		5FE747501714D1FB00FF41D3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE747511714D20200FF41D3 /* SystemConfiguration.framework in Frameworks */,
 				5FDA6AD2170A7F360096E47B /* UIKit.framework in Frameworks */,
 				5FDA6AD4170A7F360096E47B /* Foundation.framework in Frameworks */,
 				5FDA6AD6170A7F360096E47B /* CoreGraphics.framework in Frameworks */,
@@ -235,6 +243,7 @@
 		5FDA6AD0170A7F360096E47B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5FE747501714D1FB00FF41D3 /* SystemConfiguration.framework */,
 				5FDA6AD1170A7F360096E47B /* UIKit.framework */,
 				5FDA6AD3170A7F360096E47B /* Foundation.framework */,
 				5FDA6AD5170A7F360096E47B /* CoreGraphics.framework */,
@@ -464,8 +473,10 @@
 		5FE7462D1713A83500FF41D3 /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
+				5FE747421714AE9D00FF41D3 /* DCRequestProtocol.h */,
 				5FE74685171490E700FF41D3 /* DCAbstractRequest.h */,
 				5FE74686171490E700FF41D3 /* DCAbstractRequest.m */,
+				5FE7474C1714BA6B00FF41D3 /* Reachability */,
 			);
 			name = Abstract;
 			sourceTree = "<group>";
@@ -831,6 +842,15 @@
 			name = AbstractCreate;
 			sourceTree = "<group>";
 		};
+		5FE7474C1714BA6B00FF41D3 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7474D1714BA8D00FF41D3 /* Reachability.h */,
+				5FE7474E1714BA8D00FF41D3 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -988,6 +1008,7 @@
 				5FE746DE1714934800FF41D3 /* DCCreateEventViewController.m in Sources */,
 				5FE746E11714935700FF41D3 /* DCCreateTodoViewController.m in Sources */,
 				5FE746E41714936500FF41D3 /* DCCreateLocationViewController.m in Sources */,
+				5FE747521714D22A00FF41D3 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -996,6 +1017,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FDA6B06170A7F370096E47B /* Decider_iOSTests.m in Sources */,
+				5FE7474F1714BA8D00FF41D3 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

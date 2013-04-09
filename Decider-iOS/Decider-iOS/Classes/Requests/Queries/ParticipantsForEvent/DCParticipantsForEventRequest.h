@@ -9,5 +9,8 @@
 #import "DCAbstractRequest.h"
 
 @interface DCParticipantsForEventRequest : DCAbstractRequest
+@property(nonatomic, strong, readonly) NSString *eid;
+
+-(id)initRequestWithEventId:(NSString*)eid;
 
 @end

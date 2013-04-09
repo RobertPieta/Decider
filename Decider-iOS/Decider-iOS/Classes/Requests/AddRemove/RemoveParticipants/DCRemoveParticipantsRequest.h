@@ -9,5 +9,9 @@
 #import "DCAbstractRequest.h"
 
 @interface DCRemoveParticipantsRequest : DCAbstractRequest
+@property(nonatomic, strong, readonly) NSString *eid;
+@property(nonatomic, strong, readonly) NSString *fbid;
+
+-(id)initRequestWithEventId:(NSString*)eid andFacebookId:(NSString*)fbid;
 
 @end

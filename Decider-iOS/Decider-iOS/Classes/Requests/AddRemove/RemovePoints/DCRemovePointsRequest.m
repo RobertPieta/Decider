@@ -10,4 +10,18 @@
 
 @implementation DCRemovePointsRequest
 
+-(id)initRequestWithTodoId:(NSString*)tdid {
+    if(self = [super initRequest]) {
+        
+    }
+    return self;
+}
+
+#pragma mark -
+#pragma mark Request Methods
+
+-(void)startRequest {
+    urlExt = [NSString stringWithFormat:URL_Request_RemovePointsFromTodo,_tdid];
+}
+
 @end

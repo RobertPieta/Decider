@@ -9,5 +9,8 @@
 #import "DCAbstractRequest.h"
 
 @interface DCGetLocationRequest : DCAbstractRequest
+@property(nonatomic, strong, readonly) NSString *lid;
+
+-(id)initRequestWithLocationId:(NSString*)lid;
 
 @end

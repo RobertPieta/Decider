@@ -10,4 +10,25 @@
 
 @implementation DCAddPointsRequest
 
+-(id)initRequestWithTodoId:(NSString*)tdid {
+    if(self = [super initRequest]) {
+        
+    }
+    return self;
+}
+
+#pragma mark -
+#pragma mark Options
+
+-(void)method:(NSMutableURLRequest *)urlRequest {
+    [urlRequest setHTTPMethod:Code_HTTP_POST];
+}
+
+#pragma mark -
+#pragma mark Request Methods
+
+-(void)startRequest {
+    urlExt = [NSString stringWithFormat:URL_Request_AddPointsToTodo,_tdid];
+}
+
 @end

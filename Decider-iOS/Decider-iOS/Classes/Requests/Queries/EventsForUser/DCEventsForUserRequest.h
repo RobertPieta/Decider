@@ -9,5 +9,8 @@
 #import "DCAbstractRequest.h"
 
 @interface DCEventsForUserRequest : DCAbstractRequest
+@property(nonatomic, strong, readonly) NSString *fbid;
+
+-(id)initRequestWithFacebookId:(NSString*)fbid;
 
 @end

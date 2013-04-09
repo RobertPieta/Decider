@@ -10,4 +10,27 @@
 
 @implementation DCAddEmailsToEventRequest
 
+-(id)initRequestWithEventId:(NSString*)eid andEmail:(NSString*)email {
+    if(self = [super initRequest]) {
+        _eid = eid;
+        _email = email;
+    }
+    return self;
+}
+
+#pragma mark -
+#pragma mark Options
+
+-(void)method:(NSMutableURLRequest *)urlRequest {
+    [urlRequest setHTTPMethod:Code_HTTP_POST];
+}
+
+#pragma mark -
+#pragma mark Request Methods
+
+-(void)startRequest {
+    urlExt = [NSString stringWithFormat:URL_Request_AddEmailsToEvent,_eid,_email];
+    [super startRequest];
+}
+
 @end

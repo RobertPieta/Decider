@@ -9,5 +9,9 @@
 #import "DCAbstractRequest.h"
 
 @interface DCAddEmailsToEventRequest : DCAbstractRequest
+@property(nonatomic, strong, readonly) NSString* eid;
+@property(nonatomic, strong, readonly) NSString* email;
+
+-(id)initRequestWithEventId:(NSString*)eid andEmail:(NSString*)email;
 
 @end

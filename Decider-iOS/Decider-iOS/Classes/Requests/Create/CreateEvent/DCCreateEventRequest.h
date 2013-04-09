@@ -9,5 +9,10 @@
 #import "DCAbstractRequest.h"
 
 @interface DCCreateEventRequest : DCAbstractRequest
+@property(nonatomic, strong, readonly) NSString *adminFBId;
+@property(nonatomic, strong, readonly) NSString *title;
+@property(nonatomic, strong, readonly) NSString *description;
+
+-(id)initRequestWithAdminFacebookId:(NSString*)adminFBId title:(NSString*)title andDescription:(NSString*)description;
 
 @end

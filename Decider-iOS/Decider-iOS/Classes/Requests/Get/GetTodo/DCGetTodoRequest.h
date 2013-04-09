@@ -9,5 +9,8 @@
 #import "DCAbstractRequest.h"
 
 @interface DCGetTodoRequest : DCAbstractRequest
+@property(nonatomic, strong, readonly) NSString *tdid;
+
+-(id)initRequestWithTodoId:(NSString*)tdid;
 
 @end

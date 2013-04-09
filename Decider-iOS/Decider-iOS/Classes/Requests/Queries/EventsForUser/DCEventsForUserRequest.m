@@ -10,4 +10,19 @@
 
 @implementation DCEventsForUserRequest
 
+-(id)initRequestWithFacebookId:(NSString*)fbid {
+    if(self = [super initRequest]) {
+        _fbid = fbid;
+    }
+    return self;
+}
+
+#pragma mark -
+#pragma mark Request Methods
+
+-(void)startRequest {
+    urlExt = [NSString stringWithFormat:URL_Request_EventsForUser,_fbid];
+    [super startRequest];
+}
+
 @end

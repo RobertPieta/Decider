@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="-331" y="79"/>
         </scene>
-        <!--View Controller - Decider-->
+        <!--Home View Controller - Decider-->
         <scene sceneID="5">
             <objects>
-                <viewController id="2" customClass="DCViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="DCHomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,6 +47,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerPushed:" destination="2" eventType="touchUpInside" id="7pH-O7-5Cl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -63,9 +66,14 @@
                     <navigationItem key="navigationItem" title="Decider" id="Bv4-6f-OdP">
                         <barButtonItem key="rightBarButtonItem" title="Login" id="bdr-CZ-Ihn">
                             <color key="tintColor" red="0.0" green="0.2935161328" blue="0.57142857140000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="loginPushed:" destination="2" id="XSQ-2N-Gmc"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emailTextField" destination="Hgq-2d-4C3" id="AI0-Uh-fE5"/>
+                        <outlet property="passwordTextField" destination="Krh-u7-tAN" id="es9-88-X34"/>
                         <segue destination="znS-ze-6N3" kind="push" identifier="toEventListView" id="tbr-nk-7NN"/>
                         <segue destination="OJI-3e-fSP" kind="modal" identifier="toRegisterView" id="ysg-Cp-5GU"/>
                     </connections>
@@ -74,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="151" y="79"/>
         </scene>
-        <!--View Controller - Events-->
+        <!--Event List View Controller - Events-->
         <scene sceneID="W7S-ev-OPi">
             <objects>
-                <viewController id="znS-ze-6N3" sceneMemberID="viewController">
+                <viewController id="znS-ze-6N3" customClass="DCEventListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CvR-s2-8ke">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -110,6 +118,10 @@
                                         </constraints>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="znS-ze-6N3" id="Ajp-Fh-pQt"/>
+                                    <outlet property="delegate" destination="znS-ze-6N3" id="urd-gq-si0"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -123,12 +135,19 @@
                     <navigationItem key="navigationItem" title="Events" id="urJ-yY-gOt">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="Udp-xX-SvR">
                             <color key="tintColor" red="0.53260868790000004" green="0.025095852089999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="logoutPushed:" destination="znS-ze-6N3" id="4jj-Vl-Mow"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add" id="uWR-4p-5uv">
                             <color key="tintColor" red="0.0" green="0.2935161328" blue="0.57142857140000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="newEventPushed:" destination="znS-ze-6N3" id="LzR-0U-ld9"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="listTableView" destination="h30-if-B8Z" id="KdR-2Y-SvI"/>
                         <segue destination="r5W-Qa-nnM" kind="push" identifier="toTodoListView" id="Zwb-95-mQo"/>
                         <segue destination="Z1k-Qj-sYZ" kind="modal" identifier="toCreateEventView" id="LV7-CE-XHr"/>
                     </connections>
@@ -137,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="794" y="79"/>
         </scene>
-        <!--View Controller - Event-->
+        <!--Todo List View Controller - Event-->
         <scene sceneID="vQM-20-IZK">
             <objects>
-                <viewController id="r5W-Qa-nnM" sceneMemberID="viewController">
+                <viewController id="r5W-Qa-nnM" customClass="DCTodoListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YtV-00-kv6">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -206,6 +225,10 @@
                                         </constraints>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="r5W-Qa-nnM" id="Hzv-xA-g4z"/>
+                                    <outlet property="delegate" destination="r5W-Qa-nnM" id="viD-bi-5Qo"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7E-gI-lFA">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -216,6 +239,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addFriendsPushed:" destination="r5W-Qa-nnM" eventType="touchUpInside" id="96U-Z0-8iU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aM-vP-9Wr">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -226,6 +252,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="descriptionPushed:" destination="r5W-Qa-nnM" eventType="touchUpInside" id="oxY-3F-WIC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -245,9 +274,13 @@
                     <navigationItem key="navigationItem" title="Event" id="Bgh-WV-sQF">
                         <barButtonItem key="rightBarButtonItem" title="Add Todo" id="sEA-An-iTG">
                             <color key="tintColor" red="0.0" green="0.2935161328" blue="0.57142857140000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addTodoPushed:" destination="r5W-Qa-nnM" id="KgH-Pa-hfQ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="listTableView" destination="vYL-1d-piP" id="ZmV-lJ-fZ7"/>
                         <segue destination="N9L-mY-CMJ" kind="push" identifier="toTodoDetailView" id="rua-vW-XH4"/>
                         <segue destination="oHE-Hr-ANy" kind="modal" identifier="toAddFriendsView" id="1WH-SM-zl4"/>
                         <segue destination="FJG-Zs-Dyy" kind="modal" identifier="toCreateTodoView" id="GG4-MN-fOa"/>
@@ -257,10 +290,10 @@
             </objects>
             <point key="canvasLocation" x="1436" y="79"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Friends View Controller-->
         <scene sceneID="B26-n1-sV4">
             <objects>
-                <viewController id="oHE-Hr-ANy" sceneMemberID="viewController">
+                <viewController id="oHE-Hr-ANy" customClass="DCAddFriendsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tWm-Hg-1qu">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -277,6 +310,9 @@
                                     <navigationItem title="Add Friends" id="ScX-Wm-C7O">
                                         <barButtonItem key="rightBarButtonItem" title="Submit" id="g9v-2d-upq">
                                             <color key="tintColor" red="0.0" green="0.2935161328" blue="0.57142857140000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="submitPushed:" destination="oHE-Hr-ANy" id="fkz-hs-bsf"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -291,15 +327,18 @@
                             <constraint firstItem="Cxa-at-pXb" firstAttribute="centerX" secondItem="L0X-mJ-MRW" secondAttribute="centerX" type="default" id="kEL-7S-7rH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Cxa-at-pXb" id="hn1-yj-7XL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eme-j5-hvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2076" y="-643"/>
         </scene>
-        <!--View Controller - Todo-->
+        <!--Todo Detail View Controller - Todo-->
         <scene sceneID="ifT-PI-LiA">
             <objects>
-                <viewController id="N9L-mY-CMJ" sceneMemberID="viewController">
+                <viewController id="N9L-mY-CMJ" customClass="DCTodoDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ewK-ti-iAp">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -321,7 +360,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Todo Location" translatesAutoresizingMaskIntoConstraints="NO" id="3bs-bt-Rf6">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Todo Description" translatesAutoresizingMaskIntoConstraints="NO" id="3bs-bt-Rf6">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="cmR-8e-RFo"/>
@@ -334,22 +373,37 @@
                                     <constraint firstAttribute="height" constant="155" id="Z9M-ea-5k9"/>
                                 </constraints>
                             </mapView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAY-LD-4l2">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="3bs-bt-Rf6" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="4PC-Wo-prD"/>
                             <constraint firstItem="1Ip-gO-kaH" firstAttribute="leading" secondItem="ewK-ti-iAp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Cmv-h2-jjr"/>
                             <constraint firstAttribute="trailing" secondItem="1Ip-gO-kaH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="HE1-to-pl0"/>
-                            <constraint firstItem="3bs-bt-Rf6" firstAttribute="top" secondItem="ewK-ti-iAp" secondAttribute="top" constant="81" id="HzF-vT-b8k"/>
                             <constraint firstItem="jOt-AM-WTt" firstAttribute="top" secondItem="ewK-ti-iAp" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Hzs-ak-ZcZ"/>
+                            <constraint firstItem="3bs-bt-Rf6" firstAttribute="top" secondItem="eAY-LD-4l2" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Inm-4O-Oym"/>
+                            <constraint firstItem="eAY-LD-4l2" firstAttribute="leading" secondItem="ewK-ti-iAp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="L8A-Re-I61"/>
                             <constraint firstItem="slr-PW-21W" firstAttribute="top" secondItem="ewK-ti-iAp" secondAttribute="top" constant="26" id="LsK-1X-020"/>
+                            <constraint firstAttribute="trailing" secondItem="eAY-LD-4l2" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="NSG-Ni-hHn"/>
                             <constraint firstAttribute="bottom" secondItem="1Ip-gO-kaH" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Pi4-W0-zbk"/>
                             <constraint firstItem="3bs-bt-Rf6" firstAttribute="leading" secondItem="ewK-ti-iAp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="bjH-cV-ZPr"/>
                             <constraint firstItem="jOt-AM-WTt" firstAttribute="leading" secondItem="ewK-ti-iAp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="i4k-nI-4Jw"/>
+                            <constraint firstItem="eAY-LD-4l2" firstAttribute="top" secondItem="ewK-ti-iAp" secondAttribute="top" constant="68" id="oL6-nd-eHg"/>
                             <constraint firstAttribute="trailing" secondItem="slr-PW-21W" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="sS4-Er-2pc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Todo" id="pp0-8s-y4x"/>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="3bs-bt-Rf6" id="X0B-bw-iDY"/>
+                        <outlet property="locationLabel" destination="eAY-LD-4l2" id="nHU-Qw-vOv"/>
+                        <outlet property="mapView" destination="1Ip-gO-kaH" id="5LV-vy-lbA"/>
+                        <outlet property="ptsLabel" destination="slr-PW-21W" id="Uyz-X0-hzG"/>
+                        <outlet property="titleLabel" destination="jOt-AM-WTt" id="sMz-h3-9iL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKP-jS-wjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -370,10 +424,10 @@
             </objects>
             <point key="canvasLocation" x="2076" y="799"/>
         </scene>
-        <!--View Controller - Add Todo-->
+        <!--Create Todo View Controller - Add Todo-->
         <scene sceneID="QKr-f9-w8z">
             <objects>
-                <viewController id="trb-Iq-0fG" sceneMemberID="viewController">
+                <viewController id="trb-Iq-0fG" customClass="DCCreateTodoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lr5-Ke-MkI">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -394,24 +448,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mu-x7-Bxv">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="159" id="pVS-8r-fvp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yan-bY-AnW">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NH-hM-bmk">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PM4-Co-TiY">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Add Location">
@@ -421,35 +457,38 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="createLocationPushed:" destination="trb-Iq-0fG" eventType="touchUpInside" id="fGs-OW-Vv7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3NH-hM-bmk" firstAttribute="leading" secondItem="Yan-bY-AnW" secondAttribute="leading" type="default" id="0Jh-9h-qTa"/>
-                            <constraint firstItem="Yan-bY-AnW" firstAttribute="top" secondItem="2mu-x7-Bxv" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="23I-SF-1ca"/>
                             <constraint firstItem="5H1-rt-RyM" firstAttribute="top" secondItem="Lr5-Ke-MkI" secondAttribute="top" constant="107" id="5L3-XS-Ylm"/>
-                            <constraint firstItem="2mu-x7-Bxv" firstAttribute="leading" secondItem="5H1-rt-RyM" secondAttribute="leading" type="default" id="DLh-aj-YMJ"/>
-                            <constraint firstItem="Yan-bY-AnW" firstAttribute="leading" secondItem="2mu-x7-Bxv" secondAttribute="leading" type="default" id="Uu0-3O-UUD"/>
+                            <constraint firstAttribute="bottom" secondItem="PM4-Co-TiY" secondAttribute="bottom" constant="65" id="I5h-Bs-eK8"/>
                             <constraint firstItem="OH3-eh-Gbx" firstAttribute="centerX" secondItem="Lr5-Ke-MkI" secondAttribute="centerX" type="default" id="WaK-v6-pQX"/>
-                            <constraint firstItem="3NH-hM-bmk" firstAttribute="trailing" secondItem="Yan-bY-AnW" secondAttribute="trailing" type="default" id="YW6-ww-uxf"/>
-                            <constraint firstItem="3NH-hM-bmk" firstAttribute="top" secondItem="Yan-bY-AnW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="a7E-PH-UPo"/>
                             <constraint firstItem="OH3-eh-Gbx" firstAttribute="top" secondItem="Lr5-Ke-MkI" secondAttribute="top" constant="45" id="dEI-77-XI5"/>
-                            <constraint firstItem="Yan-bY-AnW" firstAttribute="trailing" secondItem="2mu-x7-Bxv" secondAttribute="trailing" type="default" id="fvb-BM-mU9"/>
                             <constraint firstItem="PM4-Co-TiY" firstAttribute="leading" secondItem="Lr5-Ke-MkI" secondAttribute="leading" constant="151" id="gM2-j4-RXB"/>
-                            <constraint firstAttribute="bottom" secondItem="3NH-hM-bmk" secondAttribute="bottom" constant="47" id="ifM-JD-Ipf"/>
                             <constraint firstItem="OH3-eh-Gbx" firstAttribute="centerX" secondItem="5H1-rt-RyM" secondAttribute="centerX" type="default" id="loF-wU-oYU"/>
-                            <constraint firstItem="Yan-bY-AnW" firstAttribute="centerY" secondItem="PM4-Co-TiY" secondAttribute="centerY" type="default" id="qcb-Dx-pAK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Todo" id="hr4-Ne-c4i">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="30J-SH-diD">
                             <color key="tintColor" red="0.53260868790000004" green="0.025095852089999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="cancelPushed:" destination="trb-Iq-0fG" id="3Wo-v2-Wiv"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="wE6-BC-cJf">
                             <color key="tintColor" red="0.0" green="0.2935161328" blue="0.57142857140000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="submitPushed:" destination="trb-Iq-0fG" id="wNq-Uk-69a"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="descriptionTextField" destination="5H1-rt-RyM" id="aVl-UB-QtJ"/>
+                        <outlet property="titleTextView" destination="OH3-eh-Gbx" id="My9-sW-CDE"/>
                         <segue destination="9Ky-zW-Vi4" kind="push" identifier="toCreateLocationView" id="WoM-p8-gRv"/>
                     </connections>
                 </viewController>
@@ -457,10 +496,10 @@
             </objects>
             <point key="canvasLocation" x="2636" y="799"/>
         </scene>
-        <!--View Controller - New Location-->
+        <!--Create Location View Controller - New Location-->
         <scene sceneID="x1r-Y6-tYY">
             <objects>
-                <viewController id="9Ky-zW-Vi4" sceneMemberID="viewController">
+                <viewController id="9Ky-zW-Vi4" customClass="DCCreateLocationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YVV-LS-AGx">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -508,19 +547,35 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Location" id="k7f-hs-HX7">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="ojA-6y-tdU">
+                            <color key="tintColor" red="0.53260868790000004" green="0.025095852089999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="cancelPushed:" destination="9Ky-zW-Vi4" id="HPQ-Tp-fpA"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="1uq-Ro-GQd">
                             <color key="tintColor" red="0.0" green="0.2935161328" blue="0.57142857140000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="submitPushed:" destination="9Ky-zW-Vi4" id="cBt-ux-dra"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cityTextField" destination="8qq-A1-7WK" id="2qT-To-asL"/>
+                        <outlet property="stateTextField" destination="mMq-Cp-zN3" id="a1j-ss-k9V"/>
+                        <outlet property="streetNumTextField" destination="PFx-Nj-T5m" id="TiP-ou-b4j"/>
+                        <outlet property="streetTextField" destination="4TX-3t-IBC" id="fmt-HY-7kx"/>
+                        <outlet property="titleTextField" destination="kDB-pL-V1h" id="NwT-fY-jnC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pxe-b3-lyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3202" y="799"/>
         </scene>
-        <!--View Controller - Register-->
+        <!--Registration View Controller - Register-->
         <scene sceneID="DjM-eJ-imf">
             <objects>
-                <viewController id="OJI-3e-fSP" sceneMemberID="viewController">
+                <viewController id="OJI-3e-fSP" customClass="DCRegistrationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zLx-le-f0T">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -561,20 +616,35 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="8XR-bp-EEV">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="7yv-ny-QnH">
+                            <color key="tintColor" red="0.53260868790000004" green="0.025095852089999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="cancelPushed:" destination="OJI-3e-fSP" id="uZ8-uc-dAB"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="7sb-XW-F45">
                             <color key="tintColor" red="0.0" green="0.2935161328" blue="0.57142857140000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="registerPushed:" destination="OJI-3e-fSP" id="W4D-y5-Ywo"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="NWd-FE-59L" id="csq-Tf-EZd"/>
+                        <outlet property="emailTextField" destination="0xI-9c-q6a" id="c7e-oC-WRr"/>
+                        <outlet property="nicknameTextField" destination="OFB-1i-fs2" id="eyi-S4-13t"/>
+                        <outlet property="passwordTextField" destination="UrN-gv-MLw" id="axI-gT-NMv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYF-2d-aXL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="794" y="799"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Event View Controller-->
         <scene sceneID="dYs-7q-8DV">
             <objects>
-                <viewController id="Z1k-Qj-sYZ" sceneMemberID="viewController">
+                <viewController id="Z1k-Qj-sYZ" customClass="DCCreateEventViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Xe-JT-JIZ">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -584,9 +654,15 @@
                                     <navigationItem title="Add Event" id="RIm-gD-Wr3">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="KzV-NE-ngZ">
                                             <color key="tintColor" red="0.53260868790000004" green="0.025095852089999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="cancelPushed:" destination="Z1k-Qj-sYZ" id="jiv-Y9-k9T"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Submit" id="eSr-fV-dmr">
                                             <color key="tintColor" red="0.0" green="0.2935161328" blue="0.57142857140000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="submitPushed:" destination="Z1k-Qj-sYZ" id="3og-2r-1Fa"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -619,6 +695,10 @@
                             <constraint firstItem="SSK-WM-C3x" firstAttribute="centerX" secondItem="fE6-Ec-QwK" secondAttribute="centerX" type="default" id="t80-fJ-qgJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="SSK-WM-C3x" id="VYY-in-R9a"/>
+                        <outlet property="titleTextField" destination="fE6-Ec-QwK" id="XgD-jE-sBM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4J1-vC-pNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -626,6 +706,103 @@
         </scene>
     </scenes>
     <classes>
+        <class className="DCAbstractCreateViewController" superclassName="DCAbstractViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCAbstractCreateViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelPushed:"/>
+                <relationship kind="action" name="submitPushed:"/>
+            </relationships>
+        </class>
+        <class className="DCAbstractDetailViewController" superclassName="DCAbstractViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCAbstractDetailViewController.h"/>
+        </class>
+        <class className="DCAbstractListViewController" superclassName="DCAbstractViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCAbstractListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="listTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="DCAbstractViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCAbstractViewController.h"/>
+        </class>
+        <class className="DCAddFriendsViewController" superclassName="DCAbstractViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCAddFriendsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="submitPushed:"/>
+                <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="DCCreateEventViewController" superclassName="DCAbstractCreateViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCCreateEventViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="descriptionTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="titleTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="DCCreateLocationViewController" superclassName="DCAbstractCreateViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCCreateLocationViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="cityTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="stateTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="streetNumTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="streetTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="titleTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="DCCreateTodoViewController" superclassName="DCAbstractCreateViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCCreateTodoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelPushed:"/>
+                <relationship kind="action" name="createLocationPushed:"/>
+                <relationship kind="outlet" name="descriptionTextField" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="titleTextView" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="DCEventListViewController" superclassName="DCAbstractListViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCEventListViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="logoutPushed:"/>
+                <relationship kind="action" name="newEventPushed:"/>
+            </relationships>
+        </class>
+        <class className="DCHomeViewController" superclassName="DCAbstractViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCHomeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="loginPushed:"/>
+                <relationship kind="action" name="registerPushed:"/>
+                <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="passwordTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="DCRegistrationViewController" superclassName="DCAbstractViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCRegistrationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelPushed:"/>
+                <relationship kind="action" name="registerPushed:"/>
+                <relationship kind="outlet" name="confirmPasswordTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nicknameTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="passwordTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="DCTodoDetailViewController" superclassName="DCAbstractDetailViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCTodoDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="descriptionTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="ptsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="DCTodoListViewController" superclassName="DCAbstractListViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DCTodoListViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addFriendsPushed:"/>
+                <relationship kind="action" name="addTodoPushed:"/>
+                <relationship kind="action" name="descriptionPushed:"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>

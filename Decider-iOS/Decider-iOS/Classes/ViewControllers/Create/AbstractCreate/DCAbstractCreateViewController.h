@@ -20,6 +20,7 @@
 #pragma mark -
 #pragma mark IBAction Methods
 
+-(IBAction)cancelPushed:(id)sender;
 -(IBAction)submitPushed:(id)sender;
 
 @end

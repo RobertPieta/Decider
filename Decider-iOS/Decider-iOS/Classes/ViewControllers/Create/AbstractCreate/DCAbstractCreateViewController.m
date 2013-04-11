@@ -35,6 +35,10 @@
 #pragma mark -
 #pragma mark IBAction Methods
 
+-(IBAction)cancelPushed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^{}];
+}
+
 -(IBAction)submitPushed:(id)sender {
     [self updateRequest];
     [self startRequest:_request withInfo:@"Submiting"];

@@ -26,6 +26,10 @@
 #pragma mark -
 #pragma mark IBAction Methods
 
+-(IBAction)cancelPushed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^{}];
+}
+
 -(IBAction)registerPushed:(id)sender {
     NSString *email = [emailTextField text];
     NSString *password = [passwordTextField text];

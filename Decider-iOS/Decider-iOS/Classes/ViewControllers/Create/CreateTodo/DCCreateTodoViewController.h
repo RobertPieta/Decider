@@ -9,8 +9,8 @@
 #import "DCAbstractCreateViewController.h"
 
 @interface DCCreateTodoViewController : DCAbstractCreateViewController {
-    IBOutlet UITextView *titleTextView;
-    IBOutlet UITextField *descriptionTextField;
+    IBOutlet UITextField *titleTextView;
+    IBOutlet UITextView *descriptionTextField;
 }
 
 #pragma mark -

@@ -10,4 +10,11 @@
 
 @interface DCTodoListViewController : DCAbstractListViewController
 
+#pragma mark -
+#pragma mark IBAction Methods
+
+-(IBAction)descriptionPushed:(id)sender;
+-(IBAction)addFriendsPushed:(id)sender;
+-(IBAction)addTodoPushed:(id)sender;
+
 @end

@@ -69,6 +69,7 @@
 		5FE7474F1714BA8D00FF41D3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7474E1714BA8D00FF41D3 /* Reachability.m */; };
 		5FE747511714D20200FF41D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE747501714D1FB00FF41D3 /* SystemConfiguration.framework */; };
 		5FE747521714D22A00FF41D3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7474E1714BA8D00FF41D3 /* Reachability.m */; };
+		5FE7475317162D7800FF41D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE747501714D1FB00FF41D3 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE7475317162D7800FF41D3 /* SystemConfiguration.framework in Frameworks */,
 				5FDA6AF9170A7F370096E47B /* SenTestingKit.framework in Frameworks */,
 				5FDA6AFA170A7F370096E47B /* UIKit.framework in Frameworks */,
 				5FDA6AFB170A7F370096E47B /* Foundation.framework in Frameworks */,

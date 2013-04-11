@@ -8,6 +8,15 @@
 
 #import "DCAbstractCreateViewController.h"
 
-@interface DCCreateTodoViewController : DCAbstractCreateViewController
+@interface DCCreateTodoViewController : DCAbstractCreateViewController {
+    IBOutlet UITextView *titleTextView;
+    IBOutlet UITextField *descriptionTextField;
+}
+
+#pragma mark -
+#pragma mark IBAction Methods
+
+-(IBAction)cancelPushed:(id)sender;
+-(IBAction)createLocationPushed:(id)sender;
 
 @end

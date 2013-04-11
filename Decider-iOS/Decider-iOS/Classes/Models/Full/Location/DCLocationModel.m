@@ -20,7 +20,7 @@
     return self;
 }
 
--(NSArray*)modelsWithArrayOfJSONDictionaries:(NSArray*)array {
++(NSArray*)modelsWithArrayOfJSONDictionaries:(NSArray*)array {
     if([array count] == 0) return [NSArray array];
     
     NSMutableArray *retArray = [NSMutableArray array];
@@ -31,6 +31,13 @@
     }
     
     return retArray;
+}
+
+#pragma mark -
+#pragma mark Description
+
+-(NSString*)description {
+    return [NSString stringWithFormat:@"%@ - %@ %@, %@ (%@)",[self title],_street_num, _street,_city,_state];
 }
 
 @end

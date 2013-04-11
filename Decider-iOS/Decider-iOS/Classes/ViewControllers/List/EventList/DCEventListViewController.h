@@ -10,4 +10,10 @@
 
 @interface DCEventListViewController : DCAbstractListViewController
 
+#pragma mark -
+#pragma mark IBAction Methods
+
+-(IBAction)logoutPushed:(id)sender;
+-(IBAction)newEventPushed:(id)sender;
+
 @end

@@ -7,7 +7,15 @@
 //
 
 #import "DCAbstractDetailViewController.h"
+#import <MapKit/MapKit.h>
 
-@interface DCTodoDetailViewController : DCAbstractDetailViewController
+@interface DCTodoDetailViewController : DCAbstractDetailViewController {
+    IBOutlet UILabel *titleLabel;
+    IBOutlet UILabel *ptsLabel;
+    IBOutlet UITextView *descriptionTextView;
+    IBOutlet UILabel *locationLabel;
+    
+    IBOutlet MKMapView *mapView;
+}
 
 @end

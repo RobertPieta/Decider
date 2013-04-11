@@ -14,4 +14,9 @@
 @property(nonatomic, strong) NSString *city;
 @property(nonatomic, strong) NSString *state;
 
+#pragma mark -
+#pragma mark Description
+
+-(NSString*)description;
+
 @end

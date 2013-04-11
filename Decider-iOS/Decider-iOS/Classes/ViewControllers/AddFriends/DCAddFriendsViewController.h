@@ -8,6 +8,13 @@
 
 #import "DCAbstractViewController.h"
 
-@interface DCAddFriendsViewController : DCAbstractViewController
+@interface DCAddFriendsViewController : DCAbstractViewController {
+    IBOutlet UITextField *emailTextField;
+}
+
+#pragma mark -
+#pragma mark IBAction Methods
+
+-(IBAction)submitPushed:(id)sender;
 
 @end

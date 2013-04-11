@@ -23,6 +23,6 @@
  * @param dict - The NSDictionary representing the model
  * @return An array of model objects
  */
--(NSArray*)modelsWithArrayOfJSONDictionaries:(NSArray*)array;
++(NSArray*)modelsWithArrayOfJSONDictionaries:(NSArray*)array;
 
 @end

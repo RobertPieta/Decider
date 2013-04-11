@@ -8,6 +8,16 @@
 
 #import "DCAbstractViewController.h"
 
-@interface DCRegistrationViewController : DCAbstractViewController
+@interface DCRegistrationViewController : DCAbstractViewController {
+    IBOutlet UITextField *emailTextField;
+    IBOutlet UITextField *passwordTextField;
+    IBOutlet UITextField *confirmPasswordTextField;
+    IBOutlet UITextField *nicknameTextField;
+}
+
+#pragma mark -
+#pragma mark IBAction Methods
+
+-(IBAction)registerPushed:(id)sender;
 
 @end

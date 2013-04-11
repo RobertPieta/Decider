@@ -8,6 +8,18 @@
 
 #import "DCAbstractViewController.h"
 
+@class DCAbstractRequest;
 @interface DCAbstractCreateViewController : DCAbstractViewController
+@property(nonatomic, strong) DCAbstractRequest *request;
+
+#pragma mark -
+#pragma mark Create Request Methods
+
+-(void)updateRequest;
+
+#pragma mark -
+#pragma mark IBAction Methods
+
+-(IBAction)submitPushed:(id)sender;
 
 @end

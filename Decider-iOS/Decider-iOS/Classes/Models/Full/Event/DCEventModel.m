@@ -17,7 +17,7 @@
     return self;
 }
 
--(NSArray*)modelsWithArrayOfJSONDictionaries:(NSArray*)array {
++(NSArray*)modelsWithArrayOfJSONDictionaries:(NSArray*)array {
     if([array count] == 0) return [NSArray array];
     
     NSMutableArray *retArray = [NSMutableArray array];

@@ -76,3 +76,20 @@
 #define DownloadCode_Location_State @"state"
 #define DownloadCode_Location_Lat @"lat"
 #define DownloadCode_Location_Lon @"lon"
+
+//Cells
+#define Cell_EventCell @"eventCell"
+#define Cell_TodoCell @"todoCell"
+
+//Segues
+#define Segue_ToEventListView @"toEventListView"
+#define Segue_ToRegisterView @"toRegisterView"
+#define Segue_ToTodoListView @"toTodoListView"
+#define Segue_ToCreateEventView @"toCreateEventView"
+#define Segue_ToCreateTodoView @"toCreateTodoView"
+#define Segue_ToCreateLocationView @"toCreateLocationView"
+#define Segue_ToTodoDetailView @"toTodoDetailView"
+#define Segue_ToAddFriendView @"toAddFriendsView"
+
+
+

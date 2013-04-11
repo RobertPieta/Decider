@@ -8,6 +8,8 @@
 
 #import "DCAbstractViewController.h"
 
+@class DCAbstractModel;
 @interface DCAbstractDetailViewController : DCAbstractViewController
+@property(nonatomic, strong) DCAbstractModel *model;
 
 @end

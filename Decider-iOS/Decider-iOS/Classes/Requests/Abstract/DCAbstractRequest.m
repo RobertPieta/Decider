@@ -108,7 +108,7 @@
     _isActive = NO;
     _data = responseData;
     
-    if([self delegate] && [[self delegate] respondsToSelector:@selector(requestCompleted:)]) {
+    if([self delegate] && [[self delegate] respondsToSelector:@selector(requestCompleted:withData:)]) {
         [[self delegate] requestCompleted:self withData:_data];
     }
 }

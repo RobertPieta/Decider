@@ -8,6 +8,9 @@
 
 #import "DCAbstractCreateViewController.h"
 
-@interface DCCreateEventViewController : DCAbstractCreateViewController
+@interface DCCreateEventViewController : DCAbstractCreateViewController {
+    IBOutlet UITextField *titleTextField;
+    IBOutlet UITextView *descriptionTextView;
+}
 
 @end

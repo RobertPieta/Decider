@@ -16,6 +16,8 @@
 
 @implementation DCAbstractDetailViewController
 
-
+-(void)viewDidLoad {
+    [super viewDidLoad];
+}
 
 @end

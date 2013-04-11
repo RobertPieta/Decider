@@ -16,4 +16,28 @@
 
 @implementation DCAbstractCreateViewController
 
+-(void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+#pragma mark -
+#pragma mark Create Request Methods
+
+-(void)updateRequest {
+    
+}
+
+-(void)requestCompleted:(DCAbstractRequest *)request withData:(NSData *)data {
+    [super requestCompleted:request withData:data];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark -
+#pragma mark IBAction Methods
+
+-(IBAction)submitPushed:(id)sender {
+    [self updateRequest];
+    [self startRequest:_request withInfo:@"Submiting"];
+}
+
 @end

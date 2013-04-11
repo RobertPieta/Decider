@@ -8,6 +8,12 @@
 
 #import "DCAbstractCreateViewController.h"
 
-@interface DCCreateLocationViewController : DCAbstractCreateViewController
+@interface DCCreateLocationViewController : DCAbstractCreateViewController {
+    IBOutlet UITextField *titleTextField;
+    IBOutlet UITextField *streetTextField;
+    IBOutlet UITextField *streetNumTextField;
+    IBOutlet UITextField *cityTextField;
+    IBOutlet UITextField *stateTextField;
+}
 
 @end

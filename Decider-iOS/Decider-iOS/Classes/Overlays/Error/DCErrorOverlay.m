@@ -10,4 +10,13 @@
 
 @implementation DCErrorOverlay
 
+#pragma mark -
+#pragma mark Display Methods
+
+-(void)display {
+    [super display];
+    
+    [self performSelector:@selector(dismiss) withObject:self afterDelay:2.0f];
+}
+
 @end

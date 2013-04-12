@@ -9,6 +9,7 @@
 #import "DCAbstractViewController.h"
 
 @interface DCHomeViewController : DCAbstractViewController {
+    IBOutlet UIButton *registerButton;
     IBOutlet UITextField *emailTextField;
     IBOutlet UITextField *passwordTextField;
 }

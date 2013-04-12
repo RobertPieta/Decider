@@ -65,6 +65,7 @@
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     
     NSString *urlStr = [NSString stringWithFormat:@"%@/%@",baseUrl,urlExt];
+    NSLog(@"Url string created: %@",urlStr);
     
     NSURL *URL = [NSURL URLWithString:urlStr];
     [request setURL:URL];
@@ -76,6 +77,7 @@
     [request setTimeoutInterval:100];
     
     connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [connection start];
     _isActive = YES;
 }
 
@@ -88,14 +90,17 @@
 #pragma mark NSURL Connection Data Delegate Methods
 
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    NSLog(@"recieved response");
     responseData = [NSMutableData data];
 }
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    NSLog(@"recieved data");
     [responseData appendData:data];
 }
 
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    NSLog(@"Failed with error");
     _isActive = NO;
     _data = NULL;
     
@@ -105,6 +110,8 @@
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    NSLog(@"Connection finished");
+    
     _isActive = NO;
     _data = responseData;
     

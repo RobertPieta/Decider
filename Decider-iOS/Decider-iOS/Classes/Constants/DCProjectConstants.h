@@ -8,7 +8,7 @@
 
 //Urls
 //Request
-#define URL_Request_Base @"https://decider.azuerwindows.com/api"
+#define URL_Request_Base @"https://decider.azurewebsites.net/api"
 
 #define URL_Requst_Authentication @"login.php"
 #define URL_Requst_Registration @"register.php?email=%@&password=%@&name=%@"

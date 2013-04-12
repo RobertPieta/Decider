@@ -25,8 +25,8 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-    infoOverlay = [[DCInfoOverlay alloc] initOverlayInView:self.view atX:0 andY:0];
-    errorOverlay = [[DCErrorOverlay alloc] initOverlayInView:self.view atX:0 andY:0];
+    infoOverlay = [[DCInfoOverlay alloc] initOverlayInView:self.view atX:160 andY:140];
+    errorOverlay = [[DCErrorOverlay alloc] initOverlayInView:self.view atX:160 andY:140];
     
     _fbid = NULL;
     _eid = NULL;
@@ -39,6 +39,7 @@
 
 -(void)displayError:(NSString*)errorStr {
     [errorOverlay setText:errorStr];
+    [errorOverlay display];
 }
 
 -(void)displayInfo:(NSString*)infoStr {
@@ -50,21 +51,33 @@
 #pragma mark Request Methods
 
 -(void)startRequest:(DCAbstractRequest*)request withInfo:(NSString*)infoStr {
+    NSLog(@"Request made with info: %@",infoStr);
+    
     [request setDelegate:self];
-    if(infoOverlay != NULL && [infoStr isEqualToString:@""]) [self displayInfo:infoStr];
+    if(infoOverlay != NULL && ![infoStr isEqualToString:@""]) [self displayInfo:infoStr];
     [request startRequest];
 }
 
 -(void)internetConnectionNotAvailableForRequest:(DCAbstractRequest *)request {
+    NSLog(@"Intenet not available for request");
     [infoOverlay dismiss];
 }
 
 -(void)errorOccured:(NSError *)error duringRequest:(DCAbstractRequest *)request {
+    NSLog(@"Request error occured: %@",[error localizedDescription]);
     [infoOverlay dismiss];
 }
 
 -(void)requestCompleted:(DCAbstractRequest *)request withData:(NSData *)data {
+    NSLog(@"Request completed");
     [infoOverlay dismiss];
+}
+
+#pragma mark -
+#pragma mark Touch Methods
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
 
 @end

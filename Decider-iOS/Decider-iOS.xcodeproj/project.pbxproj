@@ -70,6 +70,7 @@
 		5FE747511714D20200FF41D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE747501714D1FB00FF41D3 /* SystemConfiguration.framework */; };
 		5FE747521714D22A00FF41D3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7474E1714BA8D00FF41D3 /* Reachability.m */; };
 		5FE7475317162D7800FF41D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE747501714D1FB00FF41D3 /* SystemConfiguration.framework */; };
+		5FE747631717652800FF41D3 /* UIButton+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE747621717652800FF41D3 /* UIButton+Style.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +196,9 @@
 		5FE7474D1714BA8D00FF41D3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Classes/Requests/Abstract/Reachability/Reachability.h; sourceTree = "<group>"; };
 		5FE7474E1714BA8D00FF41D3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Classes/Requests/Abstract/Reachability/Reachability.m; sourceTree = "<group>"; };
 		5FE747501714D1FB00FF41D3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5FE747611717652800FF41D3 /* UIButton+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+Style.h"; path = "Classes/Styles/Button/UIButton+Style.h"; sourceTree = "<group>"; };
+		5FE747621717652800FF41D3 /* UIButton+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Style.m"; path = "Classes/Styles/Button/UIButton+Style.m"; sourceTree = "<group>"; };
+		5FE747641717669D00FF41D3 /* DCStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCStyles.h; path = Classes/Styles/DCStyles.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +263,7 @@
 			children = (
 				5FE746541713AB7800FF41D3 /* Constants */,
 				5FE7461F1713A5C500FF41D3 /* Overlays */,
+				5FE7475417175EBC00FF41D3 /* Styles */,
 				5FE7461E1713A5C300FF41D3 /* Models */,
 				5FE7461D1713A5C200FF41D3 /* Requests */,
 				5FE7461C1713A5BB00FF41D3 /* ViewControllers */,
@@ -853,6 +858,40 @@
 			name = Reachability;
 			sourceTree = "<group>";
 		};
+		5FE7475417175EBC00FF41D3 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				5FE747641717669D00FF41D3 /* DCStyles.h */,
+				5FE7475617175EFA00FF41D3 /* Button */,
+				5FE7475717175F0B00FF41D3 /* TextView */,
+				5FE7475517175EF800FF41D3 /* TextField */,
+			);
+			name = Styles;
+			sourceTree = "<group>";
+		};
+		5FE7475517175EF800FF41D3 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TextField;
+			sourceTree = "<group>";
+		};
+		5FE7475617175EFA00FF41D3 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				5FE747611717652800FF41D3 /* UIButton+Style.h */,
+				5FE747621717652800FF41D3 /* UIButton+Style.m */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		5FE7475717175F0B00FF41D3 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TextView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1011,6 +1050,7 @@
 				5FE746E11714935700FF41D3 /* DCCreateTodoViewController.m in Sources */,
 				5FE746E41714936500FF41D3 /* DCCreateLocationViewController.m in Sources */,
 				5FE747521714D22A00FF41D3 /* Reachability.m in Sources */,
+				5FE747631717652800FF41D3 /* UIButton+Style.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

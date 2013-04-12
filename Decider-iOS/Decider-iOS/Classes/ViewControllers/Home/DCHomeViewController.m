@@ -30,6 +30,8 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    
+    [registerButton style];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -56,12 +58,19 @@
 #pragma mark Request Methods
 
 -(void)requestCompleted:(DCAbstractRequest *)request withData:(NSData *)data {
+    [super requestCompleted:request withData:data];
+    
     if(partialEvents == NULL) {
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
         
         NSDictionary *userDict = dict[@"result"];
         DCUserModel *user = [[DCUserModel alloc] initWithJSONDictionary:userDict];
         fbid = [user fbid];
+        
+        if(fbid == NULL) {
+            [self displayError:@"Error logging in"];
+            return;
+        }
         
         _request = [[DCEventsForUserRequest alloc] initRequestWithFacebookId:fbid];
         [self startRequest:_request withInfo:@"Downloading Events"];
